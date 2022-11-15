@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nodemon src/server.ts",
     "start": "sucrase-node src/server.ts",
-    "build": "sucrase ./src ./dist --transforms typescript,imports"
+    "build": "sucrase ./src -d ./Dir --transforms imports"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
