@@ -6,8 +6,6 @@ import mongoose from 'mongoose'
 
 import routes from './routes'
 
-const app = express()
-
 class App {
   public express: express.Application
 
