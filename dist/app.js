@@ -26,7 +26,7 @@ class App {
     _mongoose2.default.connect(
       process.env.MONGO_URL || "",
       {})
-      .then(() => console.log('MongoDb is connected'))
+      .then(() => console.log('MongoDb is connected!'))
       .catch((error)=> console.log(error))
   }
 
