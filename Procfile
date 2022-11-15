@@ -1,1 +1,1 @@
-web: yarn start
+web: sucrase-node src/server.ts
