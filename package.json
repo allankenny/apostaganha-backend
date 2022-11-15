@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "sucrase-node src/server.ts",
-    "build": "sucrase ./src -d ./Dir --transforms imports"
+    "start": "sucrase-node dist/server.js",
+    "build": "sucrase ./src --extensions \".json,.js,.ts\" -d ./dist --transforms typescript,imports"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
