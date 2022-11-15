@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "start": "sucrase-node src/server.ts",
-    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+    "build": "sucrase-node src/server.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
