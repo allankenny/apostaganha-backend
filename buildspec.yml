@@ -4,11 +4,11 @@ phases:
   pre_build:
     commands:
       - echo Install packages...
-      - yarn install
+      - npm run install
   build:
     commands:
       - echo Create build...
-      - yarn build
+      - npm run build
   post_build:
     commands:
       - echo Removing unnecessary files...
