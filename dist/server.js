@@ -4,5 +4,5 @@ var _app = require('./app'); var _app2 = _interopRequireDefault(_app);
 
 const PORT = process.env.PORT || 3000
 
-_app2.default.listen(3000)
+_app2.default.listen(PORT)
 console.log('app listening on port '+PORT)
