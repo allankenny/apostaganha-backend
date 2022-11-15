@@ -1,3 +1,5 @@
+import dotenv from "dotenv"
+dotenv.config()
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
@@ -24,7 +26,7 @@ class App {
 
   private database(): void{
     mongoose.connect(
-      'mongodb+srv://root:schedule@cluster0.m9fiez4.mongodb.net/?retryWrites=true&w=majority',
+      process.env.MONGO_URL || "",
       {})
       .then(() => console.log('MongoDb is connected'))
       .catch((error)=> console.log(error))
