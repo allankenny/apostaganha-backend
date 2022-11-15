@@ -24,7 +24,7 @@ class App {
 
    database(){
     _mongoose2.default.connect(
-      process.env.MONGO_URL || "",
+      process.env.MONGO_URL || "mongodb+srv://root:schedule@cluster0.m9fiez4.mongodb.net/?retryWrites=true&w=majority",
       {})
       .then(() => console.log('MongoDb is connected!'))
       .catch((error)=> console.log(error))
