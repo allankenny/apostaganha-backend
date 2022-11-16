@@ -8,7 +8,6 @@ class BetController{
    async create(req, res){
     const { userId } = req.body
     try{
-      console.log(userId);
       if(await _User2.default.findOne({ _id: new _mongoose2.default.Types.ObjectId(userId)} )){
         const bet = await _Bets2.default.create(req.body)
         return res.json(bet);
