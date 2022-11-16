@@ -8,7 +8,6 @@ class BetController{
   public async create(req: Request, res: Response): Promise<Response>{
     const { userId } = req.body
     try{
-      console.log(userId);
       if(await User.findOne({ _id: new mongoose.Types.ObjectId(userId)} )){
         const bet = await Bet.create(req.body)
         return res.json(bet);
