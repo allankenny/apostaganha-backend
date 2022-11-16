@@ -2,7 +2,6 @@
 _dotenv2.default.config()
 var _app = require('./app'); var _app2 = _interopRequireDefault(_app);
 
-const PORT = process.env.PORT || 3333
-
-_app2.default.listen(PORT)
-console.log('app listening on port '+PORT)
+_app2.default.listen(process.env.PORT || 3333, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, _app2.default.settings.env);
+});
